@@ -63,8 +63,34 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width: 1024px) {
+  .flex-container {
+    height: fit-content;
+  }
 
+  .quarter {
+    width: 48%;
+  }
 
+  .third {
+    width: 48%;
+    order: 2;
+  }
+
+  .third:last-of-type {
+    width: 97.3%;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 1024px){
+  .half, 
+  .third, 
+  .quarter {
+  width: 97%;
+}
+}
+/* putting brackets inside of brackets stood out to me as well as putting classes inside of another thing that we were targeting.  Overall this is very confusing to me and I dont really get it yet */
 
 
 /* Mobile Styles*/
